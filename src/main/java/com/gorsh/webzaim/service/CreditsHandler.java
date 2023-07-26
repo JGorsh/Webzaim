@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class CreditsHandler {
     public static final ArrayList<String> listPaymentCodes = new ArrayList<>(Arrays.asList("X","0","1","A","2","3"));
+
     public Map<LocalDate, String> getThroughLine(List<Credit> creditList){
         Map<LocalDate, String> throughLineMap = initPaymentMap(creditList);
         List<PaymentDto> generalPaymentList = getPaymentList(creditList);
